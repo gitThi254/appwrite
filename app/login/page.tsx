@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { toast } from "react-hot-toast/headless";
 import axios from "axios";
-const page = () => {
+const LoginPage = () => {
   const router = useRouter();
   const [user, setUser] = useState({
     email: "",
@@ -69,4 +69,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default LoginPage;

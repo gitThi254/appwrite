@@ -1,11 +1,11 @@
 "use client";
 import axios from "axios";
-import React, { use, useEffect, useState } from "react";
+import React, { useState } from "react";
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
-const page = () => {
+const ProfilePage = () => {
   const router = useRouter();
   const [data, setData] = useState("nothing");
   const handleLogoutClick = async () => {
@@ -54,4 +54,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ProfilePage;
